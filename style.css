@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 header {
@@ -18,8 +19,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-style: solid;
-    border-width: 0.1px 1px 1px;
+    border: black 1px solid;
     border-top: none;
 }
 
@@ -50,30 +50,43 @@ header>button {
 
 main {
     width: 95%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+span {
+    color: #ED4D1B;
+}
+
 /*  first-display */
 
 #first-display,
-#second-display {
+#second-display,
+#display-third {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-style: solid;
-    border-width: 0.1px 1px 1px;
+    border: black 1px solid;
     border-top: none;
 }
 
+#first-display {
+    padding-bottom: 220px;
+    justify-content: space-around;
+}
+
+#second-display {
+    align-items: center;
+}
+
+
 #first-display>div {
-    width: 25%;
+    width: 30%;
     display: flex;
     flex-direction: column;
-    height: 440px;
+    height: 450px;
     justify-content: space-between;
     margin-left: 5%;
 }
@@ -89,17 +102,14 @@ main {
 }
 
 #first-display>div>h1 {
-    font-size: 64px;
+    font-size: 70px;
     font-weight: 900;
     line-height: 67px;
 }
 
-#first-display>div>h1>span {
-    color: #ED4D1B;
-}
 
 #first-display>div>p {
-    width: 350px;
+    width: 450px;
     font-size: 24px;
     font-style: medium;
     line-height: 28px;
@@ -115,37 +125,46 @@ main {
 
 #second-display {
     justify-content: center;
-
+    border-bottom: none;
 }
 
 
 #second-display>div {
     border: 3px black solid;
     box-shadow: 4px 4px black;
-    width: 272px;
-    height: 306px;
+    width: 300px;
+    height: 350px;
     font-size: 20px;
-    padding: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
+    justify-content: space-evenly;
+    margin-top: -140px;
 }
+
 
 #second-display>div>img {
     width: 48px;
-
+    margin: 25px 25px 0 25px;
 }
 
-.div-orange {
-    background-color: #ED4D1B;
-    margin-bottom: 50px;
+#second-display>div>h3 {
+    font-weight: 900;
+    line-height: 28.13px;
+    font-size: 24px;
+    margin-inline: 25px;
 }
 
 #second-display>div>p {
     font-size: 16px;
     font-weight: 500;
     line-height: 18.75px;
+    margin-inline: 25px;
+}
+
+.div-orange {
+    background-color: #ED4D1B;
+    margin-bottom: 50px;
+    margin-inline: 15px;
 }
 
 .div-yellow {
@@ -155,10 +174,38 @@ main {
 .arrow-right {
     display: flex;
     align-self: flex-end;
+    width: 70px !important;
+    margin: 0 !important;
+}
+
+/* display-third */
+
+#display-third {
+    flex-direction: column;
+    align-items: center;
+    height: 500px !important;
+    justify-content: center;
 
 }
 
+#display-third>h1 {
+    font-weight: 700;
+    font-size: 64px;
+    Line-height: 100%;
+    align-items: center;
+    vertical-align: bottom;
+}
 
+#display-third>button {
+    background-color: #ED4D1B;
+    border: 3px black solid;
+    box-shadow: 4px 4px black;
+    width: 240px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 64px;
+}
 
 /* RESPONSIVIDADE */
 
@@ -173,7 +220,7 @@ main {
     }
 
     #first-display>div>p {
-        width: 300px;
+        width: 350px;
         font-size: 20px;
     }
 
